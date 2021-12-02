@@ -1,6 +1,6 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/***************************************************************
+ * General
+ ***************************************************************/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -20,9 +20,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/***************************************************************
+ * Back to top
+ ***************************************************************/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -50,9 +50,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/***************************************************************
+ * Preloader
+ ***************************************************************/
 #preloader {
   position: fixed;
   top: 0;
@@ -96,17 +96,19 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+
+/***************************************************************
+ * Disable animation delay on mobile
+ ***************************************************************/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+
+/***************************************************************
+ * Header
+ ***************************************************************/
 #header {
   transition: all 0.5s;
   background: #fff;
@@ -149,12 +151,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/***************************************************************
+ * Navigation Menu
+ ***************************************************************/
 .navbar {
   padding: 0;
 }
@@ -250,9 +249,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+/*************************************************************
+ * Mobile Navigation 
+ *************************************************************/
 .mobile-nav-toggle {
   color: #124265;
   font-size: 28px;
@@ -343,16 +342,21 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Home Section
---------------------------------------------------------------*/
+/***************************************************************
+ * Home Section
+ ***************************************************************/
 #home {
     width: 100%;
-    height: 100vh;
+    padding-top: 20px;
     position: relative;
     background-size: cover;
     position: relative;
   }
+  #home #top-title {
+    font-size: 56px !important; 
+    line-height: 36px !important;
+  }
+
   #home:before {
     content: "";
     background: rgba(255, 255, 255, 0.8);
@@ -450,16 +454,375 @@ h1, h2, h3, h4, h5, h6 {
     #home {
       height: auto;
     }
+    #home #top-title {
+      font-size: 28px !important; 
+      line-height: 36px !important;
+    }
     #home h1 {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 20px !important; 
+      line-height: 36px !important;
     }
     #home h2 {
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 16px !important;
+      line-height: 24px !important;
     }
   }
 
+/***************************************************************
+ * About Section
+ ***************************************************************/
+  #about {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    background-size: cover;
+    position: relative;
+  }
+  #about:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #about .container {
+    padding-top: 80px;
+  }
+  #about > .container > .row > .col-lg-8 > h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #124265;
+    font-family: "Poppins", sans-serif;
+  }
+  #about h2 {
+    color: #5e5e5e;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+  }
+  #about .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #2487ce;
+  }
+  #about .btn-get-started:hover {
+    background: #3194db;
+  }
+  #about .icon-boxes {
+    margin-top: 100px;
+  }
+  #about .icon-box {
+    padding: 50px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  #about .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  #about .icon-box .title a {
+    color: #124265;
+    transition: 0.3s;
+  }
+  #about .icon-box .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  #about .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 36px;
+    line-height: 1;
+    color: #2487ce;
+  }
+  #about .icon-box:hover {
+    transform: scale(1.08);
+  }
+  #about .icon-box:hover .title a {
+    color: #2487ce;
+  }
+  @media (min-width: 1024px) {
+    #about {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-height: 800px) {
+    #about {
+      height: auto;
+    }
+  }
+  @media (max-width: 992px) {
+    #about {
+      height: auto;
+    }
+    #about h1 {
+      font-size: 20px !important;
+      line-height: 36px !important;
+    }
+    #about h2 {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
+
+/***************************************************************
+ * Links Section
+ ***************************************************************/
+  #links {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    background-size: cover;
+    position: relative;
+  }
+  #links:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #links .container {
+    padding-top: 80px;
+  }
+  #links > .container > .row > .col-lg-8 > h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #124265;
+    font-family: "Poppins", sans-serif;
+  }
+  #links h2 {
+    color: #5e5e5e;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+  }
+  #links .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #2487ce;
+  }
+  #links .btn-get-started:hover {
+    background: #3194db;
+  }
+  #links .icon-boxes {
+    margin-top: 100px;
+  }
+  #links .icon-box {
+    padding: 50px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  #links .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  #links .icon-box .title a {
+    color: #124265;
+    transition: 0.3s;
+  }
+  #links .icon-box .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  #links .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 36px;
+    line-height: 1;
+    color: #2487ce;
+  }
+  #links .icon-box:hover {
+    transform: scale(1.08);
+  }
+  #links .icon-box:hover .title a {
+    color: #2487ce;
+  }
+  @media (min-width: 1024px) {
+    #links {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-height: 800px) {
+    #links {
+      height: auto;
+    }
+  }
+  @media (max-width: 992px) {
+    #links {
+      height: auto;
+    }
+    #links h1 {
+      font-size: 20px !important;
+      line-height: 36px !important;
+    }
+    #links h2 {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
+  
+/***************************************************************
+ * Critique Section
+ ***************************************************************/
+  #critique {
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    background-size: cover;
+    position: relative;
+  }
+  #critique:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #critique .container {
+    padding-top: 80px;
+  }
+  #critique > .container > .row > .col-lg-8 > h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #124265;
+    font-family: "Poppins", sans-serif;
+  }
+  #critique h2 {
+    color: #5e5e5e;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+  }
+  #critique .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #2487ce;
+  }
+  #critique .btn-get-started:hover {
+    background: #3194db;
+  }
+  #critique .icon-boxes {
+    margin-top: 100px;
+  }
+  #critique .icon-box {
+    padding: 50px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  #critique .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  #critique .icon-box .title a {
+    color: #124265;
+    transition: 0.3s;
+  }
+  #critique .icon-box .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  #critique .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 36px;
+    line-height: 1;
+    color: #2487ce;
+  }
+  #critique .icon-box:hover {
+    transform: scale(1.08);
+  }
+  #critique .icon-box:hover .title a {
+    color: #2487ce;
+  }
+  @media (min-width: 1024px) {
+    #critique {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-height: 800px) {
+    #critique {
+      height: auto;
+    }
+  }
+  @media (max-width: 992px) {
+    #critique {
+      height: auto;
+    }
+    #critique h1 {
+      font-size: 20px !important;
+      line-height: 36px !important;
+    }
+    #critique h2 {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
+  
+
+/***************************************************************
+ * Footer
+ ***************************************************************/
 footer {
     background-color: #124265;
     color: #fff;
