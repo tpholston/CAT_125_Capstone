@@ -2,197 +2,472 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Worker Cooperatives</title>
-    <!-- Remote style sheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    
-    <!-- Local style sheet relative to workspace folder -->
-    <link rel="stylesheet" href="css/index.css">
-    
-    <!-- Local javascript file relative to workspace folder -->
-    <script src="scripts/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worker Cooperatives</title>
+  <!-- Remote style sheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Local style sheet relative to workspace folder -->
+  <link rel="stylesheet" href="css/index.css">
 
+  <!-- Local javascript file relative to workspace folder -->
+  <script src="scripts/main.js"></script>
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://use.fontawesome.com/027af2092b.js"></script>
+  <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
 
-    <!-- Favicon -->
-    <link href="assets/favicon-32x32.png" rel="icon">
-    <!-- Embedded style sheet -->
+  <!-- Vendor CSS Files -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link href="assets/favicon-32x32.png" rel="icon">
+  <!-- Embedded style sheet -->
 </head>
 
 <body>
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center justify-content-between">
-            <h1 class="logo">Worker Cooperatives</h1>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo">Worker Cooperatives</h1>
 
-            <nav id="navbar" class="navbar">
-                <ul>
-                  <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-                  <li><a class="nav-link scrollto" href="#about">About</a></li>
-                  <li><a class="nav-link scrollto" href="#links">Links</a></li>
-                  <li><a class="nav-link scrollto o" href="#critique">Critique</a></li>
-                  <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Drop Down 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Drop Down 1</a></li>
-                          <li><a href="#">Deep Drop Down 2</a></li>
-                          <li><a href="#">Deep Drop Down 3</a></li>
-                          <li><a href="#">Deep Drop Down 4</a></li>
-                          <li><a href="#">Deep Drop Down 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Drop Down 2</a></li>
-                      <li><a href="#">Drop Down 3</a></li>
-                      <li><a href="#">Drop Down 4</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                  <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-              </nav><!-- .navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#links">Links</a></li>
+          <li><a class="nav-link scrollto" href="#critique">Critique</a></li>
+          <li class="dropdown"><a href="#"><span>Extras</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#collage">Collage</a></li>
+              <li><a href="#mondragon">Mondragon</a></li>
+              <li><a href="#jobs">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <!--li><a class="getstarted scrollto" href="#about">Get Started</a></li-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+
+  </header>
+
+  <!-- about section -->
+  <section id="about" class="d-flex align-items-center">
+    <div class="container position-relative">
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1>About</h1>
+          <p>Welcome to my website where you can learn all about democratic workplace initiatives around the world! From
+            learning about the success stories of Mondragon, to starting a cooperative in your community, or even
+            finding employment in a cooperative you can do it all here!</p>
+          <p>I’m currently a junior attending the University of California, San Diego and I’m pursuing a bachelor’s
+            degree in computer science. In my classes, internships, and student interactions, the conventional idea of
+            going to a FAANG company was always heavily encouraged. A sort of binary of either making a startup where
+            you’re the CEO or working for a big tech company seemed to be the narrative that was pushed almost
+            exclusively from my personal experience. I started digging into possible alternatives and stumbled across
+            the success story of worker cooperatives as an alternative to conventional employment and ownership.</p>
+          <p>gathered a lot of data from lots of different sources (the qualities of which will be detailed in this
+            website) and read a lot of material. Although I am most definitely biased towards promoting worker
+            cooperatives based on the evidence I have seen, navigating to the links page will have categorized articles
+            regarding various metrics of success/failures that I hope to be as unbiased as possible. I put many
+            different studies both supporting and against my views but if you have other studies you would like to have
+            on the site to give people an even better understanding it is highly encouraged! Reach out to my email:
+            jeff.bezos.me@gmail.com.</p>
+          <p>I have a section where people can leave their contact information alongside job listings so anyone actively
+            looking for cooperative employment can reach out. In the future I may include a looking for employment
+            section where people can post their LinkedIn accounts or other points of contact in addition to their
+            respective skills. Thanks for checking the site out!</p>
         </div>
-        
-    </header>
-    
-    <!-- home section-->
-    <section id="home" class="d-flex align-items-center">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 text-center">
-                    <h1 id="top-title">Worker Co-ops</h1>
-                    <h2>Revolutionizing the Economy Through Democratic Initiative</h2>
-                </div>
-            </div><br>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1>Home</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="col-lg-4" style="position: relative;">
-                    <center>
-                        <img src="assets/cooperative.jpeg" alt="Cooperation Image" class="img-fluid">
-                    </center>
-                </div>
-            </div>
- 
-            <br>
+        <div class="col-lg-4" style="position: relative;">
+          <div style="background-color: #3e9bdd; border-radius: 1px; width: 5px; height: 100%; right: inherit;"></div>
         </div>
-    </section>
-
-    <!-- about section -->
-    <section id="about" class="d-flex align-items-center">
-        <div class="container position-relative">
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h1>About</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="col-lg-4" style="position: relative;">
-                    <center>
-                        <img src="assets/cooperative.jpeg" alt="Cooperation Image" class="img-fluid">
-                    </center>
-                </div>
-            </div>
- 
-            <br>
-        </div>
-    </section>
-
-    <!-- Links section-->
-    <section id="links" class="d-flex align-items-center">
-      <div class="container position-relative">
-        <br>
-          <div class="row justify-content-center">
-              <div class="col-lg-8">
-                  <h1>Links</h1>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-              </div>
-              <div class="col-lg-4" style="position: relative;">
-                  <center>
-                      <img src="assets/cooperative.jpeg" alt="Cooperation Image" class="img-fluid">
-                  </center>
-              </div>
-          </div>
-
-          <br>
       </div>
+
+      <br>
+    </div>
+  </section>
+
+  <!-- Links section-->
+  <section id="links" class="d-flex align-items-center">
+    <div class="container position-relative">
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1>Links</h1>
+        </div>
+        <div class="col-lg-4" style="position: relative;">
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card card-green">
+            <p class="card-question">Survivability</p>
+            <div class="card-separator"></div>
+            <p class="card-content">In the UK from 2008-2013, the 5-year survival rate for an enterprise was <b>80%</b>
+              for cooperatives and 41% for other ownership models</p>
+            <p class="card-content">In Quebec from 1998-2008, the 10-year survival rate was <b>44%</b> for cooperatives
+              and 19.5% for other enterprises </p>
+            <p class="card-content">In Quebec from 1989-1998, the 10-year survival was <b>46%</b> for cooperatives and
+              20% for non-cooperatives</p>
+            <a
+              href="https://www.ons.gov.uk/businessindustryandtrade/business/activitysizeandlocation/bulletins/businessdemography/2014-11-27">View
+              Source (UK)</a>
+            <a href="http://collections.banq.qc.ca/ark:/52327/bs1906652">View Source (Quebec 2008)</a>
+            <a href="https://contenu.william.coop/Librairies/Documents/taux%20de%20survie%20des%20coop.pdf">View Source
+              (Quebec 1998)</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-green">
+            <p class="card-question">Efficiency and Productivity</p>
+            <div class="card-separator"></div>
+            <p class="card-content">Although some may argue that a lack of incentivization can lead to lower efficiency
+              levels, this isn't supported in research.
+              One study (Craig and Pencavel) found that cooperatives may raise productivity by 6 to 14 percent but no
+              definitive conclusions could be made
+              from this due to a couple factors detailed on page 167. However another more recent study on several
+              thousand firms from France found cooperative productivity
+              to be the same as or even higher than their conventional counterparts.
+            </p>
+            <a href="https://www.brookings.edu/wp-content/uploads/1995/01/1995_bpeamicro_craig.pdf">View Source (Craig
+              and Pencavel)</a>
+            <a
+              href="https://www.researchgate.net/publication/236888727_Productivity_Capital_and_Labor_in_Labor-Managed_and_Conventional_Firms_An_Investigation_on_French_Data">View
+              Source (French Data)</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-blue">
+            <p class="card-question">Scope - Revenue</p>
+            <div class="card-separator"></div>
+            <p class="card-content">In 2008, the 300 largest coops made up 1.6 trillion / 63.575 trillion = 2.5% of
+              world GDP.</p>
+            <p class="card-content">In 2011, the top 100 coops in the USA had $215 billion in revenue.</p>
+            <p class="card-content">In 2017, the top 100 coops in the USA had $208 billion in revenue.</p> 
+            <a href="https://data.worldbank.org/indicator/ny.gdp.mktp.cd">View Source (2008 GDP)</a>
+            <a href="http://web.archive.org/web/20120425050149/http://www.coop100.coop/">View Source (2011)</a>
+            <a href="https://impact.ncb.coop/hubfs/assets/resources/NCB_Co-op_100_2018_WEB.pdf">View Source (2017)</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-red">
+            <p class="card-question">Good Sustainable Jobs in the Community</p>
+            <div class="card-separator"></div>
+            <p class="card-content">Worker co-ops have been shown to choose employment stability over income
+              stability.
+              Employee members are able to choose to preserve jobs in which they have a say in determining
+              working conditions and employment risk, and in which they are likely to be better motivated, more
+              creative, and happier. The
+              cooperatives may affect public finances and health positively by decreasing unemployment risk both in
+              the cooperatives
+              themselves and in the community.
+            </p>
+            <a
+              href="https://deliverypdf.ssrn.com/delivery.php?ID=294114121126075112026030105125091070063055032019074004085073100009029004070023110007042057100123047057125068090105121028031011126016017086082012069095088082019125092053080082006082017097066095009094001124085096111023089121110026082008025069087094067087&EXT=pdf&INDEX=TRUE">View
+              Source</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-blue">
+            <p class="card-question">Scope - Employment</p>
+            <div class="card-separator"></div>
+            <p class="card-content">In the USA, coops directly employ 856,000 full time equivalents and indirectly
+              account for 2 million jobs (1.8% of all jobs).
+              In France in 2010, coops employ 750,000 people (3% of private salaried employees).
+              In France in 2018, coops employ 1,300,000 people (5.5% of private salaried employees) and represent
+              70% of retail banking, 40% of agriculture, and 30% of retail commerce.
+            </p>
+            <a
+              href="http://web.archive.org/web/20130122071937/http://www.ncba.coop/ncba/about-co-ops/research-economic-impact">View
+              Source (USA)</a>
+            <a href="https://www.entreprises.coop/component/content/article/78-decouvrir-les-cooperatives/164.html">View
+              Source (France 2010)</a>
+            <a href="https://www.coop-immo.fr/sites/coop-immo.fr/files/upload/copie_de_coopfr_panorama_2018_web.pdf">View
+              Source (France 2018)</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-red">
+            <p class="card-question">Perverse Supply Response</p>
+            <div class="card-separator"></div>
+            <p class="card-content">Worker cooperatives have shown that they will consistently cut output and jobs
+              in response to an increase
+              in the price of its product or service. Major studies looking at worker cooperatives from different
+              traditions in three different
+              countries in comparison with conventional firms have recently found that the cooperatives do not
+              respond perversely to demand shocks.
+            </p>
+            <a href="https://web.stanford.edu/~pista/coopssept04.pdf">View Source (Italy)</a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0147596783710279?via%3Dihub">View Source
+              (Pacific Northwest USA)</a>
+            <a href="http://dx.doi.org/10.1016/j.jce.2009.08.001">View Source (Uruguay)</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-blue">
+            <p class="card-question">Scope - Saturation</p>
+            <div class="card-separator"></div>
+            <p class="card-content">Cooperatives represent 1 billion people! 23% of banks and 30% of insurance firms
+              are controlled by mutual and coop firms.
+              Cooperatives are low-profile but powerful economic actors, with the world's 300 largest ones
+              generating revenues in 2008 of more than $1.6 trillion.
+              In some advanced industrial countries, coops generate a meaningful share of economic output: 21% in
+              Finland, 17.5% in New Zealand, 16.4% in Switzerland, and 13% in Sweden.
+            </p>
+            <a href="https://archive.md/vPE88">View Source</a>
+            <div class="card-separator"></div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+    </div>
   </section>
 
   <!-- Critique section -->
   <section id="critique" class="d-flex align-items-center">
-      <div class="container position-relative">
-          <br>
-          <div class="row justify-content-center">
-              <div class="col-lg-8">
-                  <h1>Critique</h1>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-              </div>
-              <div class="col-lg-4" style="position: relative;">
-                  <center>
-                      <img src="assets/cooperative.jpeg" alt="Cooperation Image" class="img-fluid">
-                  </center>
-              </div>
-          </div>
+    <div class="container position-relative">
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-lg-4" style="position: relative">
+          <div class="ml-auto" style="background-color: #3e9bdd; border-radius: 1px; width: 5px; height: 100%; "></div>
+        </div>
+        <div class="col-lg-8">
+          <h1>If they are so successful, then where are they?</h1>
+          <p>
+            The major critique I hear from proponents of conventional business (particularly David Friedman in <a
+              href="https://youtu.be/29qDJHoDStA">this</a> video) is this one and it seems logical enough: "In the
+            market businesses compete to survive and grow. If cooperatives are so successful, then why aren't they
+            everywhere? Why aren't they dominating the market?". This is a really good question to ask but there are
+            a couple things wrong. Let's start by tackling the underlying presupposition which is that growth and size
+            is a good metric of success. Endless pursuit of growth isn't necessarily something we should be striving for
+            as a society and I think the climate crisis is the best argument in support of this. In an economy that
+            promotes
+            growth and profitability over the wellbeing of people we have seen and will continue to see the
+            ramifications of
+            rampant externalities. Although a worker cooperative doesn't necessarily tackle this externality issue, it
+            does
+            provide companies that put profitability secondary to the needs of workers. In the case of one of the
+            largest worker
+            cooperatives in the world, Mondragon, during a major economic downturn in the Spanish economy they
+            demonstrated a deep
+            commitment to the continuation of employment for its members. This is just one example. Many studies have
+            demonstrated
+            that while conventional firms tend to adjust employment during periods of economic turmoil, cooperatives
+            tend to adjust
+            pay more than employment ("Good Sustainable Jobs in the Community" link). So, while we may not see many
+            Google or Amazon
+            sized cooperatives, maybe that isn't the metric we should be going off of. Now even if you're not convinced
+            by that, maybe
+            you don't believe in climate change, or you just don't care, the reality is that most corporations are very
+            small. Among the
+            firms that have at least one employee, around 90 per cent have less than 20 employees in the UK (93.7
+            percent) the US
+            (89.6 percent) and France (90.4 percent) and less than 10 employees in Spain. Large firms are very rare.
+            Only 0.3 percent
+            of the firms that have employees have 500 employees or more in the UK and the US, 0.2 percent in France and
+            0.1 percent in Spain.
+            Although we always hear about the fortune 500 companies, the reality is most companies are very small. If
+            you really want to
+            see a cooperative that seems to be really dominating the market though, navigate to the section of this site
+            on Mondragon, the
+            seventh largest corporation in Spain. This is an extremely successful and big corporation that employs
+            thousands. In
+            addition, there are many obstacles for cooperatives that conventional businesses don't necessarily have to
+            worry about.
+            Things like initial investment can be really hard for cooperatives to garnish as a result of liability.
+            Cooperatives
+            don't have one person who is responsible for investment and as a result, getting loans from banks can be a
+            difficult
+            hurdle to get over. Gathering the initial capital to start a business is tough but through political action
+            (or even
+            social action in making these types of unconventional investments more socially acceptable) we can one
+            day hope to create easier paths for cooperatives to get off the ground. After all, it seems this would be a
+            really good
+            investment of funds, as the turnover rate for cooperatives is significantly lower than conventional
+            corporations.
+          </p>
+        </div>
 
-          <br>
       </div>
+
+      <br>
+    </div>
   </section>
-    
-    <!--div class="container external internal" id="content">
+
+  <!-- Collage section -->
+  <section id="collage" class="d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-12" style="position: relative;">
+          <h1>Collage</h1>
+          <br>
+          <center>
+            <img src="assets/cooperative.PNG" alt="Cooperative Collage" class="img-fluid">
+          </center>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!-- Mondragon section -->
+  <section id="mondragon" class="d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-12" style="position: relative;">
+          <h1>Mondragon</h1>
+          <br>
+          <p>
+            Mondragon Corporation is the world's largest worker cooperative as well as the seventh largest company in
+            Spain. The corporation was founded by a priest named José María Arizmendiarrieta along with five other
+            workers in 1956. When the founders moved to the Mondragon region, it had been neglected for nearly one
+            hundred years. There were no employment opportunities, very poor education, and little hope for the future.
+            As a result, the cooperative has maintained in it’s core values the importance of grassroot management and
+            investment in community action and education.
+          </p>
+          <p>
+            Mondragon is a collection of worker co-ops where members democratically and collectively own the
+            corporation. The process behind acquiring new members is done through probationary periods. A prospective
+            member will be given a period of time where they are overseen by their peers. Subsequently, the prospective
+            member’s peers will make a democratic decision alongside the elected board of directors of mondragon to
+            determine whether or not this person will become a member. When a person becomes a member they have to pay a
+            membership fee to the corporation and are given a vote in what is very similar to a conventional
+            corporation’s shareholder meeting. Votes are done to determine rules, policies, and who the company's board
+            of directors are. In this way workers play a direct role in not only production but deciding what to do with
+            company profits.
+          <p>
+            The company is highly competitive and is in many markets around the globe employing over 80,000 people
+            across 37 countries. Mondragon maintains that the key to it’s massive success is in large part a result of
+            the participatory management system. Workers have direct say in the operations of the business and what to
+            do with company profits and as a result these profits tend to go towards increasing pay and benefits.
+            Cooperatives like Mondragon tend to make less risky investments and as a result continue to be beacons of
+            long lasting and stable employment for its members. In a 2008 recession, the Spanish economy was shrinking
+            at an annual rate of 1.9%. As a result, Mondragon democratically decided rather than laying workers off like
+            many conventional businesses were doing they would implement a worker income drop between 5-10%. Unlike
+            other companies where the majority of pay cuts go towards laying off workers while managerial pay tends to
+            soar, Mondragon’s managers took the biggest cuts. The wage cuts were implemented in 2009 when most other
+            Spanish companies were firing workers to reduce costs (a total of 3.5 million people were added to the
+            unemployed during this time).
+          </p>
+          <p>
+            Worker’s enjoy benefits including paid maternity and paternity leave alongside free higher education
+            opportunities including their own non-profit university (Mondragon University). Workers have consistently
+            seen higher wages in comparison to their conventional counterparts in Spain. Another value of mondragon is
+            that of corporate social responsibility to fair distribution of wealth. One of the interesting policies that
+            worker cooperatives like Mondragon have historically implemented is the idea of a cap on lowest to highest
+            associate pay. No manager within any cooperative can make more than six times the salary of any worker in
+            the cooperative. CEO compensation is hundreds of times greater than that of their average employee. In a
+            world where income inequality in conventional enterprises iis such a big issue, perhaps following models
+            like Mondragon can begin to curb these massive inequities.
+          </p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!-- Employment section -->
+  <section id="employment" class="d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-12" style="position: relative;">
+          <h1>Employment</h1>
+          <br>
+          <zing-grid caption="Employment Opportunities" layout="row" viewport-stop sort>
+            <zg-data data='[
+                {
+                  "firstName": "Mohamed",
+                  "lastName": "Salah",
+                  "information": "mohamed11salah@gmail.com",
+                  "position": "Software Engineer"
+                },
+                {
+                  "firstName": "Sadio",
+                  "lastName": "Mane",
+                  "information": "saido.mane3@gmail.com",
+                  "position": "Plumber"
+                },
+                {
+                  "firstName": "Roberto",
+                  "lastName": "Firmino",
+                  "information": "roberto.firmino@yahoo.com",
+                  "position": "Mechanic"
+                },
+                {
+                  "firstName": "Daniel",
+                  "lastName": "Sturridge",
+                  "information": "daniel.sturridge@gmail.com",
+                  "position": "HR representative"
+                }
+              ]'></zg-data>
+            <zg-colgroup>
+              <zg-column index="firstName, lastName" header="Name">
+                <template>
+                    [[index.firstName]] [[index.lastName]]
+                  </template>
+              </zg-column>
+              <zg-column index="information"></zg-column>
+              <zg-column index="position" sort="disabled"></zg-column>
+            </zg-colgroup>
+          </zing-grid>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!--div class="container external internal" id="content">
         <div class="row">
             <div class="col">1 of 2</div>
             <div class="col">2 of 2</div>
         </div>
     </div-->
-    <!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark pt-4">
+  <!-- Footer -->
+  <footer class="page-footer font-small stylish-color-dark pt-4">
 
-    <!-- Footer Links -->
+    <!-- Footer Links
     <div class="container text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
+
+       Grid row -->
+      <!-- <div class="row">
+
+         Grid column
         <div class="col-md-4 mx-auto">
-  
-          <!-- Content -->
+
+          Content
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
           <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
             consectetur
             adipisicing elit.</p>
-  
+
         </div>
-        <!-- Grid column -->
-  
+         Grid column
+
         <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
+
+        Grid column
         <div class="col-md-2 mx-auto">
-  
-          <!-- Links -->
+
+          Links
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-  
+
           <ul class="list-unstyled">
             <li>
               <a href="#!">Link 1</a>
@@ -207,18 +482,18 @@
               <a href="#!">Link 4</a>
             </li>
           </ul>
-  
+
         </div>
-        <!-- Grid column -->
-  
+        Grid column
+
         <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
+
+        Grid column
         <div class="col-md-2 mx-auto">
-  
-          <!-- Links -->
+
+          Links
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-  
+
           <ul class="list-unstyled">
             <li>
               <a href="#!">Link 1</a>
@@ -233,18 +508,18 @@
               <a href="#!">Link 4</a>
             </li>
           </ul>
-  
+
         </div>
-        <!-- Grid column -->
-  
+        Grid column
+
         <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
+
+        Grid column
         <div class="col-md-2 mx-auto">
-  
-          <!-- Links -->
+
+          Links
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-  
+
           <ul class="list-unstyled">
             <li>
               <a href="#!">Link 1</a>
@@ -259,19 +534,18 @@
               <a href="#!">Link 4</a>
             </li>
           </ul>
-  
+
         </div>
-        <!-- Grid column -->
-  
+        Grid column
+
       </div>
-      <!-- Grid row -->
-  
+      Grid row
+
     </div>
-    <!-- Footer Links -->
-  
-    <hr>
-  
-    <!-- Call to action -->
+    Footer Links -->
+
+
+    <!-- Call to action
     <ul class="list-unstyled list-inline text-center py-2">
       <li class="list-inline-item">
         <h5 class="mb-1">Register for free</h5>
@@ -280,10 +554,9 @@
         <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
       </li>
     </ul>
-    <!-- Call to action -->
-  
-    <hr>
-  
+    Call to action -->
+
+
     <!-- Social buttons -->
     <ul class="list-unstyled list-inline text-center">
       <li class="list-inline-item">
@@ -318,9 +591,9 @@
     <div class="footer-copyright text-center py-3">
     </div>
     <!-- Copyright -->
-  
+
   </footer>
-  <!-- Footer -->  
+  <!-- Footer -->
 </body>
 
 </html>

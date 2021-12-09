@@ -701,6 +701,99 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 24px !important;
     }
   }
+
+.card {
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #444;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #eee;
+  padding-top: 30px;
+  float: left;
+  height: 500px;
+}
+
+.card::before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  font-size: 28px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.card > .card-question {
+  margin: 20px 0 20px;
+  font-size: 120%;
+}
+.card > .card-separator {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.card > a {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+
+.card > .card-content {
+  height: 300px;
+}
+
+.card-red {
+  border-top: 4px solid #e74c3c !important;
+}
+
+.card-red::before {
+  color: #e74c3c !important;
+  content: "\f0c0" !important;
+  font-family: "FontAwesome";
+  text-align: center;
+}
+.card-red > .card-separator {
+  border: 1px solid #e74c3c !important;
+}
+  
+.card-red > .card-answer-separator {
+  border: 1px dotted #e74c3c !important;
+}
+
+
+.card-green {
+  border-top: 4px solid #16a085 !important;
+}
+.card-green::before {
+  color: #16a085 !important;
+  content: "\f085" !important;
+  font-family: "FontAwesome" !important;
+  text-align: center;
+}
+.card-green > .card-separator {
+  border: 1px solid #16a085 !important;
+}
+
+
+.card-blue {
+  border-top: 4px solid #3194db !important;
+}
+.card-blue::before {
+  color: #3194db !important;
+  content: "\f05b" !important;
+  font-family: "FontAwesome";
+  text-align: center;
+
+}
+.card-blue > .card-separator {
+  border: 1px solid #3194db !important;
+}
+
   
 /***************************************************************
  * Critique Section
@@ -826,4 +919,355 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     background-color: #124265;
     color: #fff;
+}
+
+/***************************************************************
+ * Collage Section
+ ***************************************************************/
+ #collage {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  background-size: cover;
+  position: relative;
+}
+#collage:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#collage .container {
+  padding-top: 80px;
+}
+#collage > .container > .row > .col-lg-12 > h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #124265;
+  font-family: "Poppins", sans-serif;
+}
+#collage h2 {
+  color: #5e5e5e;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+#collage .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 14px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #2487ce;
+}
+#collage .btn-get-started:hover {
+  background: #3194db;
+}
+#collage .icon-boxes {
+  margin-top: 100px;
+}
+#collage .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+#collage .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+#collage .icon-box .title a {
+  color: #124265;
+  transition: 0.3s;
+}
+#collage .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+#collage .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+#collage .icon-box:hover {
+  transform: scale(1.08);
+}
+#collage .icon-box:hover .title a {
+  color: #2487ce;
+}
+@media (min-width: 1024px) {
+  #collage {
+    background-attachment: fixed;
+  }
+}
+@media (max-height: 800px) {
+  #collage {
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #collage {
+    height: auto;
+  }
+  #collage h1 {
+    font-size: 20px !important;
+    line-height: 36px !important;
+  }
+  #collage h2 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+/***************************************************************
+ * Mondragon Section
+ ***************************************************************/
+ #mondragon {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  background-size: cover;
+  position: relative;
+}
+#mondragon:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#mondragon .container {
+  padding-top: 80px;
+}
+#mondragon > .container > .row > .col-lg-12 > h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #124265;
+  font-family: "Poppins", sans-serif;
+}
+#mondragon h2 {
+  color: #5e5e5e;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+#mondragon .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 14px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #2487ce;
+}
+#mondragon .btn-get-started:hover {
+  background: #3194db;
+}
+#mondragon .icon-boxes {
+  margin-top: 100px;
+}
+#mondragon .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+#mondragon .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+#mondragon .icon-box .title a {
+  color: #124265;
+  transition: 0.3s;
+}
+#mondragon .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+#mondragon .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+#mondragon .icon-box:hover {
+  transform: scale(1.08);
+}
+#mondragon .icon-box:hover .title a {
+  color: #2487ce;
+}
+@media (min-width: 1024px) {
+  #mondragon {
+    background-attachment: fixed;
+  }
+}
+@media (max-height: 800px) {
+  #mondragon {
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #mondragon {
+    height: auto;
+  }
+  #mondragon h1 {
+    font-size: 20px !important;
+    line-height: 36px !important;
+  }
+  #mondragon h2 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+/***************************************************************
+ * Employment Section
+ ***************************************************************/
+ #employment {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  background-size: cover;
+  position: relative;
+}
+#employment:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#employment .container {
+  padding-top: 80px;
+}
+#employment > .container > .row > .col-lg-12 > h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #124265;
+  font-family: "Poppins", sans-serif;
+}
+#employment h2 {
+  color: #5e5e5e;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+#employment .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 14px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #2487ce;
+}
+#employment .btn-get-started:hover {
+  background: #3194db;
+}
+#employment .icon-boxes {
+  margin-top: 100px;
+}
+#employment .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+#employment .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+#employment .icon-box .title a {
+  color: #124265;
+  transition: 0.3s;
+}
+#employment .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+#employment .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+#employment .icon-box:hover {
+  transform: scale(1.08);
+}
+#employment .icon-box:hover .title a {
+  color: #2487ce;
+}
+@media (min-width: 1024px) {
+  #employment {
+    background-attachment: fixed;
+  }
+}
+@media (max-height: 800px) {
+  #employment {
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #employment {
+    height: auto;
+  }
+  #employment h1 {
+    font-size: 20px !important;
+    line-height: 36px !important;
+  }
+  #employment h2 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
 }
